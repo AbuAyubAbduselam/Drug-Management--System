@@ -29,23 +29,12 @@ const AddBill = () => {
       <Form method="post" className="form">
         <h4 className="form-title">generate bill</h4>
         <div className="form-center">
-          <FormRow
-            type="text"
-            name="drugId"
-            labelText="drug id"
-            defaultValue=""
-          />
-          <FormRow
-            type="text"
-            name="customerName"
-            labelText="patient name"
-            defaultValue="Abdu"
-          />
+          <FormRow type="text" name="drugId" labelText="drug id" />
+          <FormRow type="text" name="customerName" labelText="patient name" />
           <FormRow
             type="text"
             name="patientAddress"
-            labelText="patient Adress"
-            defaultValue="Addis ababa"
+            labelText="patient adress"
           />
           <div>
             <div className="def-starter">+251</div>
@@ -58,14 +47,7 @@ const AddBill = () => {
             />
           </div>
 
-          <FormRow
-            type="number"
-            labelText="quantity"
-            name="quantity"
-            min={0}
-            defaultValue={50}
-          />
-
+          <FormRow type="number" labelText="quantity" name="quantity" min={0} />
           <SubmitBtn formBtn />
         </div>
       </Form>

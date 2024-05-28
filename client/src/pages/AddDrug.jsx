@@ -33,31 +33,21 @@ const AddDrug = () => {
             type="text"
             name="drugName"
             labelText="medicine <no-transform>name</no-transform>"
-            defaultValue="Paracetamol"
           />
-          <FormRow
-            type="number"
-            labelText="quantity"
-            name="quantity"
-            min={0}
-            defaultValue={50}
-          />
+          <FormRow type="number" labelText="quantity" name="quantity" min={1} />
           <FormRow
             type="number"
             labelText="weight  <no-transform>in mg</no-transform>"
             name="weight"
-            min={0}
-            defaultValue={300}
+            min={1}
           />
           <FormRow
             type="number"
             labelText="price <no-transform>per unit</no-transform>  "
             min={0}
             name="price"
-            defaultValue={20}
           />
           <FormRow type="date" labelText="expiry date" name="expiryDate" />
-
           <FormRowSelect
             name="supplier"
             labelText="supplier"
