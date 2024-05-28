@@ -23,6 +23,7 @@ import cron from "node-cron";
 //middleware
 import errorHandlerMiddleware from "./middleware/errorHandlerMiddleware.js";
 import { authenticateUser } from "./middleware/authMiddleware.js";
+import Drug from "./models/drugModels.js";
 
 app.use(cookieParser());
 app.use(express.json());

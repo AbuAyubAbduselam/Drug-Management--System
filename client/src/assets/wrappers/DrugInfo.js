@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   }
 
   .drug-id {
-    background-color: #f1f1f1;
+    background-color: var(--text-secondary-color);
     padding: 5px 8px;
     border-radius: 2px;
     font-size: 10px;
