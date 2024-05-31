@@ -43,10 +43,8 @@ const Wrapper = styled.section`
     padding: 0.75rem 1rem;
     border-radius: 1.5rem;
   }
-
-  .two-btn {
-    display: grid;
-    gap: 1rem;
+  .log-cont {
+    display: flex;
   }
 
   .user {
@@ -68,19 +66,33 @@ const Wrapper = styled.section`
     background: var(--primary-700);
     box-shadow: var(--shadow-3);
   }
+  .admin {
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+  }
+  .menu-icon {
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+    display: none;
+    cursor: pointer;
+  }
+
   @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 400px;
       column-gap: 3rem;
     }
-    .admin {
-      position: absolute;
-      top: 1.8rem;
-      right: 3rem;
-    }
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 600px) {
+    .btn {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
   }
 `;
 export default Wrapper;

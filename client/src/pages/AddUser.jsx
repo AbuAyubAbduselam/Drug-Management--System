@@ -29,36 +29,11 @@ const AddUser = () => {
       <Form method="post" className="form">
         <h4 className="form-title">add pharmacist</h4>
         <div className="form-center">
-          <FormRow
-            type="text"
-            name="name"
-            labelText="first name"
-            defaultValue="Abduselam"
-          />
-          <FormRow
-            type="text"
-            labelText="last name"
-            name="lastName"
-            defaultValue="Idris"
-          />
-          <FormRow
-            type="tel"
-            labelText="phone number"
-            name="phone"
-            defaultValue="092350"
-          />
-          <FormRow
-            type="password"
-            labelText="password"
-            name="password"
-            defaultValue="092350"
-          />
-          <FormRow
-            type="email"
-            labelText="email"
-            name="email"
-            defaultValue="a@gmail.com"
-          />
+          <FormRow type="text" name="name" labelText="first name" />
+          <FormRow type="text" labelText="last name" name="lastName" />
+          <FormRow type="tel" labelText="phone number" name="phone" />
+          <FormRow type="password" labelText="password" name="password" />
+          <FormRow type="email" labelText="email" name="email" />
           <FormRowSelect
             name="role"
             labelText="role"

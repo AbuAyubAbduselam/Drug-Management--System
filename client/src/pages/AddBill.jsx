@@ -1,5 +1,5 @@
 import { FormRow, SubmitBtn } from "../components";
-import Wrapper from "../assets/wrappers/DashboardFormPage";
+import Wrapper from "../assets/wrappers/BillDashboardForm";
 import { useOutletContext } from "react-router-dom";
 import { Form, redirect } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -36,7 +36,7 @@ const AddBill = () => {
             name="patientAddress"
             labelText="patient adress"
           />
-          <div>
+          <div className="phone-cont">
             <div className="def-starter">+251</div>
             <FormRow
               type="tel"

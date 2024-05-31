@@ -85,7 +85,7 @@ export const validateBillInput = withValidationErrors([
   body("patientPhone")
     .notEmpty()
     .withMessage("Phone number is required")
-    .matches(/^\+251\d{9}$/)
+    .matches(/^\d{9}$/)
     .withMessage("Phone number must be valid"),
   body("quantity")
     .notEmpty()
